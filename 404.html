@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Erreur 404 - CodeBase</title>
+    <meta content="text/html" charset="utf-8"/>
+    <meta name="google-site-verification" content="omlC3mdFDa67MUgxHe4g266UEsY-REJAvPlIHzX9RUM" />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" media="handheld, only screen and (max-device-width: 480px)" type="text/css" href="css/mobile.css"/>
+    <link rel="icon" href="images/codebase.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;690&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Braah+One" rel="stylesheet">
+    <script src="js/menu.js"></script>
+</head>
+<body id="body-color">
+
+<div id="menu-container"></div>
+ 
+<br><br><br>
+
+  <span class="linkText1"><a href="home">Page</a></span>
+  <span class="linkSeparator">/</span>
+  <span class="linkText2"><a href="404">Non-trouvée</a></span>
+
+  <br><br><br>
+
+  <span class="titleHome"><a href="404">Oups, la page est indisponible !</a></span>
+  <br><br><br>
+  <p class="sub2">
+    La page demandée n'a pas été trouvée. Il se peut que vous ayez navigué vers la mauvaise adresse ou qu'il n'existe pas de page distincte pour la ressource demandée.
+    <br><br>
+    Essayez d'aller sur la <span class="list"><a href="home">page d'accueil</a></span> et d'utiliser le menu déroulant.
+    <br><br>
+    <blockquote class="block"> Si vous pensez que la ressource demandée par cette adresse devrait exister, contactez nous à l'adresse <span class="list"><a href="mailto:contact.coopbot@gmail.com">contact.coopbot@gmail.com</a></span> ou sur le <span class="list"><a href="https://discord.gg/ASpCdT2JZQ">serveur Discord</a></span>.</blockquote>
+  </p>
+    <br><br><br>
+  </ul>
+
+<div id="left-menu">
+  <br>
+  <ul class="menu-items">
+    <div id="bar1"></div>
+    
+    <li><span id="menucolor0"><a href="home">Accueil</a></span></li>
+    <li><span id="menucolor0"><a href="logs">Mises à jour</a></span></li>
+    <li><span id="menucolor0"><a href="terms">Conditions d'utilisation</a></span></li>
+
+    <div id="bar2"></div>
+
+    <li><a><strong>1.</strong> Systèmes</a>
+      <a class="toggle1" tabindex="0" onclick="toggleCommandsColumn1()">
+        <div>❱</div>
+      </a>
+    </li>
+    <div id="commands-column1" style="display: none;">
+      <li><a class="openmenu" href="systems/introduction"><strong>1.0.</strong> Introduction</a></li>
+      <li><a class="openmenu" href="systems/custom"><strong>1.1.</strong> Customisation de profil</a></li>
+      <li><a class="openmenu" href="systems/economy"><strong>1.2.</strong> Économie</a></li>
+      <li><a class="openmenu" href="systems/experience"><strong>1.3.</strong> Expérience</a></li>
+      <li><a class="openmenu" href="systems/giveaways"><strong>1.4.</strong> Giveaways</a></li>
+      <li><a class="openmenu" href="systems/rolerewards"><strong>1.5.</strong> Récompenses de niveaux</a></li>
+      <li><a class="openmenu" href="systems/shop"><strong>1.6.</strong> Boutique</a></li>
+      <li><a class="openmenu" href="systems/suggestions"><strong>1.7.</strong> Suggestions</a></li>
+      <li><a class="openmenu" href="systems/tickets"><strong>1.8.</strong> Tickets</a></li>
+      <li><a class="openmenu" href="systems/updates"><strong>1.9.</strong> Mises à jour</a></li>
+      <li><a class="openmenu" href="systems/welcome"><strong>1.10.</strong> Message de Bienvenue</a></li>
+    </div>
+  
+    <li><a><strong>2.</strong> Commandes Slash</a>
+      <a class="toggle2" tabindex="0" onclick="toggleCommandsColumn2()">
+        <div>❱</div>
+      </a>
+    </li>
+    <div id="commands-column2" style="display: none;">
+      <li><a class="openmenu" href="commands/introduction"><strong>2.0.</strong> Introduction</a></li>
+      <li><a class="openmenu" href="commands/bet"><strong>2.1.</strong> /bet</a></li>
+      <li><a class="openmenu" href="commands/buy"><strong>2.2.</strong> /buy</a></li>
+      <li><a class="openmenu" href="commands/clear"><strong>2.3.</strong> /clear</a></li>
+      <li><a class="openmenu" href="commands/close"><strong>2.4.</strong> /close</a></li>
+      <li><a class="openmenu" href="commands/coinflip"><strong>2.5.</strong> /coinflip</a></li>
+      <li><a class="openmenu" href="commands/createthread"><strong>2.6.</strong> /createthread</a></li>
+      <li><a class="openmenu" href="commands/daily"><strong>2.7.</strong> /daily</a></li>
+      <li><a class="openmenu" href="commands/deposit"><strong>2.8.</strong> /deposit</a></li>
+      <li><a class="openmenu" href="commands/description"><strong>2.9.</strong> /description</a></li>
+      <li><a class="openmenu" href="commands/editshop"><strong>2.10.</strong> /editshop</a></li>
+      <li><a class="openmenu" href="commands/embed"><strong>2.11.</strong> /embed</a></li>
+      <li><a class="openmenu" href="commands/endgiveaway"><strong>2.12.</strong> /endgiveaway</a></li>
+      <li><a class="openmenu" href="commands/feed"><strong>2.13.</strong> /feed</a></li>
+      <li><a class="openmenu" href="commands/give"><strong>2.14.</strong> /give</a></li>
+      <li><a class="openmenu" href="commands/giveaway"><strong>2.15.</strong> /giveaway</a></li>
+      <li><a class="openmenu" href="commands/help"><strong>2.16.</strong> /help</a></li>
+      <li><a class="openmenu" href="commands/hug"><strong>2.17.</strong> /hug</a></li>
+      <li><a class="openmenu" href="commands/infos"><strong>2.18.</strong> /infos</a></li>
+      <li><a class="openmenu" href="commands/invite"><strong>2.19.</strong> /invite</a></li>
+      <li><a class="openmenu" href="commands/kiss"><strong>2.20.</strong> /kiss</a></li>
+      <li><a class="openmenu" href="commands/level"><strong>2.21.</strong> /level</a></li>
+      <li><a class="openmenu" href="commands/locate"><strong>2.22.</strong> /locate</a></li>
+      <li><a class="openmenu" href="commands/manage"><strong>2.23.</strong> /manage</a></li>
+      <li><a class="openmenu" href="commands/money"><strong>2.24.</strong> /money</a></li>
+      <li><a class="openmenu" href="commands/morpion"><strong>2.25.</strong> /morpion</a></li>
+      <li><a class="openmenu" href="commands/panel"><strong>2.26.</strong> /panel</a></li>
+      <li><a class="openmenu" href="commands/pat"><strong>2.27.</strong> /pat</a></li>
+      <li><a class="openmenu" href="commands/play"><strong>2.28.</strong> /play</a></li>
+      <li><a class="openmenu" href="commands/poll"><strong>2.29.</strong> /poll</a></li>
+      <li><a class="openmenu" href="commands/profile"><strong>2.30.</strong> /profile</a></li>
+      <li><a class="openmenu" href="commands/reactrole"><strong>2.31.</strong> /reactrole</a></li>
+      <li><a class="openmenu" href="commands/report"><strong>2.32.</strong> /report</a></li>
+      <li><a class="openmenu" href="commands/rewards"><strong>2.33.</strong> /rewards</a></li>
+      <li><a class="openmenu" href="commands/rob"><strong>2.34.</strong> /rob</a></li>
+      <li><a class="openmenu" href="commands/rulepanel"><strong>2.35.</strong> /rulepanel</a></li>
+      <li><a class="openmenu" href="commands/say"><strong>2.36.</strong> /say</a></li>
+      <li><a class="openmenu" href="commands/scratch"><strong>2.37.</strong> /scratch</a></li>
+      <li><a class="openmenu" href="commands/search"><strong>2.38.</strong> /search</a></li>
+      <li><a class="openmenu" href="commands/setlevel"><strong>2.39.</strong> /setlevel</a></li>
+      <li><a class="openmenu" href="commands/setmoney"><strong>2.40.</strong> /setmoney</a></li>
+      <li><a class="openmenu" href="commands/setrewards"><strong>2.41.</strong> /setrewards</a></li>
+      <li><a class="openmenu" href="commands/setrules"><strong>2.42.</strong> /setrules</a></li>
+      <li><a class="openmenu" href="commands/setsuggest"><strong>2.43.</strong> /setsuggest</a></li>
+      <li><a class="openmenu" href="commands/setwelcome"><strong>2.44.</strong> /setwelcome</a></li>
+      <li><a class="openmenu" href="commands/shop"><strong>2.45.</strong> /shop</a></li>
+      <li><a class="openmenu" href="commands/slap"><strong>2.46.</strong> /slap</a></li>
+      <li><a class="openmenu" href="commands/suggest"><strong>2.47.</strong> /suggest</a></li>
+      <li><a class="openmenu" href="commands/suggestmod"><strong>2.48.</strong> /suggestmod</a></li>
+      <li><a class="openmenu" href="commands/support"><strong>2.49.</strong> /support</a></li>
+      <li><a class="openmenu" href="commands/tickle"><strong>2.50.</strong> /tickle</a></li>
+      <li><a class="openmenu" href="commands/timeout"><strong>2.51.</strong> /timeout</a></li>
+      <li><a class="openmenu" href="commands/toplevel"><strong>2.52.</strong> /toplevel</a></li>
+      <li><a class="openmenu" href="commands/topmoney"><strong>2.53.</strong> /topmoney</a></li>
+      <li><a class="openmenu" href="commands/untimeout"><strong>2.54.</strong> /untimeout</a></li>
+      <li><a class="openmenu" href="commands/updates"><strong>2.55.</strong> /updates</a></li>
+      <li><a class="openmenu" href="commands/updatesbeta"><strong>2.56.</strong> /updatesbêta</a></li>
+      <li><a class="openmenu" href="commands/userinfo"><strong>2.57.</strong> /userinfo</a></li>
+      <li><a class="openmenu" href="commands/vote"><strong>2.58.</strong> /vote</a></li>
+      <li><a class="openmenu" href="commands/withdraw"><strong>2.59.</strong> /withdraw</a></li>
+      <li><a class="openmenu" href="commands/work"><strong>2.60.</strong> /work</a></li>
+    </div>
+
+    <li><a><strong>3.</strong> Serveur Support</a>
+      <a class="toggle3" tabindex="0" onclick="toggleCommandsColumn3()">
+        <div>❱</div>
+      </a>
+    </li>
+    <div id="commands-column3" style="display: none;">
+      <li><a class="openmenu" href="infos/introduction"><strong>3.0.</strong> Introduction</a></li>
+      <li><a class="openmenu" href="infos/discover"><strong>3.1.</strong> Découvrir</a></li>
+      <li><a class="openmenu" href="infos/support"><strong>3.2.</strong> Soutenir</a></li>
+      <li><a class="openmenu" href="infos/beta"><strong>3.3.</strong> Rejoindre la Bêta</a></li>
+      <li><a class="openmenu" href="infos/grade"><strong>3.4.</strong> Recevoir un Grade acheté</a></li>
+      <li><a class="openmenu" href="infos/donate"><strong>3.5.</strong> Devenir Donateur</a></li>
+    </div>
+
+    <li><a><strong>4.</strong> Aide</a>
+      <a class="toggle4" tabindex="0" onclick="toggleCommandsColumn4()">
+        <div>❱</div>
+      </a>
+    </li>
+    <div id="commands-column4" style="display: none;">
+      <li><a class="openmenu" href="helps/introduction"><strong>4.0.</strong> Introduction</a></li>
+      <li><a class="openmenu" href="helps/config"><strong>4.1.</strong> Configuration</a></li>
+      <li><a class="openmenu" href="helps/perms"><strong>4.2.</strong> Permissions</a></li>
+      <li><a class="openmenu" href="helps/github"><strong>4.3.</strong> Github</a></li>
+    </div>
+  </ul>
+  <button id="btn1" onclick="switchTheme('theme1')">Classic</button>
+  <button id="btn2" onclick="switchTheme('theme2')">Discord</button>
+  <button id="btn3" onclick="switchTheme('theme3')">Blue</button>
+</div>
+
+<div id="footer">  
+  <div class="text">Coop - Bot Discord - Wiki</div>
+</div>
+
+
+</body>
+</html>
