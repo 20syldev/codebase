@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://20syldev.github.io/codebase">
-    <img src="https://i.postimg.cc/gJJ9wB58/CodeBase.png" alt="Coop Bot" style="width: 25%;">
+    <img src="https://i.postimg.cc/nVRnznLC/codebase.png" alt="Coop Bot" style="width: 25%;">
   </a>
   <br>
   <h2>- CodeBase - Dépôt Officiel -</h2>
