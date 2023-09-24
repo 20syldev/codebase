@@ -70,7 +70,6 @@ p {
 }
 
 #top .text {
-    user-select: none;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -111,19 +110,54 @@ p {
 
 .sub3 {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    width: 55%;
+}
+
+.sub4 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.8em;
     width: 55%;
+}
+
+.block br {
+    margin-left: 2.5%;
+}
+
+.return {
+    margin-left: 25px;
 }
 
 .tag {
     background-color: #016BF6;
     color: #ffffff;
-    padding: 6px;
+    padding: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 6px;
-    font-family: 'Epilogue', sans-serif;
+    border-radius: 10px;
+    font-family: 'Font Awesome 6 Free', sans-serif;
+    font-weight: 600;
     font-size: 0.8em;
+}
+
+.tagImg0 {
+    user-select: none;
+    height: 10px;
+    position: relative;
+}
+
+.tagImg1 {
+    user-select: none;
+    vertical-align: -1px;
+    height: 12px;
+    position: relative;
+}
+
+.tagImg2 {
+    user-select: none;
+    vertical-align: -3.5px;
+    height: 16px;
+    position: relative;
 }
 
 ::-webkit-scrollbar {
@@ -158,5 +192,21 @@ p {
 }
 
 .textBlock {
-    margin-left: 2.2%;
+    margin-left: 25px;
+}
+
+#linkCode0 {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid;
+    border-color: #0168ee;
+    font-weight: 500;
+    color: #0168ee;
+    background: #171824;
+    cursor: pointer;
+    transition: all .3s ease;
+    position: relative;
+    display: inline-block;
+    animation: shine 3s ease-in-out infinite;
 }
