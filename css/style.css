@@ -39,10 +39,11 @@ hr {
 }
 
 #titleHR {
-    width: 16.6%;
+    width: 255px;
     user-select: none;
     color: #5865F2;
     margin-top: 10px;
+    position: relative;
 }
 
 a {
@@ -91,29 +92,38 @@ p {
 }
 
 .sub0 {
-    margin-left: 5%;
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
     font-weight: 600;
 }
 
 .sub1 {
-    margin-left: 5%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6em;
     font-weight: 600;
 }
 
 .sub2 {
-    margin-left: 5%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.35em;
     width: 55%;
 }
 
-.linksList {
-    margin-left: 5%;
-    font-size: 1.3em;
+.sub3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    width: 55%;
+}
+
+.tag {
+    background-color: #016BF6;
+    color: #ffffff;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 0.8em;
 }
 
 ::-webkit-scrollbar {
