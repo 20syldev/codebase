@@ -32,8 +32,11 @@ function copyContent(button) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const viewCounts = [];
+
   for (let i = 0; i < 100; i++) {
-    viewCounts[i] = 0;
+    const storedCount = localStorage.getItem(`viewCount${i}`);
+    viewCounts[i] = storedCount ? parseInt(storedCount) : 0;
+    document.getElementById(`viewCount${i}`).textContent = viewCounts[i];
   }
 
   function incrementAndView(index) {
