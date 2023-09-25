@@ -30,18 +30,40 @@ function copyContent(button) {
   }
 }
 
+var firebaseConfig = {
+  apiKey: "AIzaSyDcKlJWgVaIJWwfthqijUp34k14IdzJ5ZI",
+  authDomain: "codebase-5f5f1.firebaseapp.com",
+  databaseURL: "https://codebase-5f5f1.firebaseio.com",
+  projectId: "codebase-5f5f1",
+  storageBucket: "gs://codebase-5f5f1.appspot.com",
+  messagingSenderId: "1028335431763",
+  appId: "1:1028335431763:web:d41962ac157e561b9456a6"
+};
+
+firebase.initializeApp(firebaseConfig);
+
 document.addEventListener('DOMContentLoaded', () => {
   const viewCounts = [];
 
   for (let i = 0; i < 100; i++) {
-    const storedCount = localStorage.getItem(`viewCount${i}`);
-    viewCounts[i] = storedCount ? parseInt(storedCount) : 0;
-    document.getElementById(`viewCount${i}`).textContent = viewCounts[i];
+    const viewsRef = firebase.database().ref(`/viewCount${i}`);
+    viewsRef.once('value')
+      .then(function(snapshot) {
+        const storedCount = snapshot.val();
+        viewCounts[i] = storedCount ? parseInt(storedCount) : 0;
+        document.getElementById(`viewCount${i}`).textContent = viewCounts[i];
+      })
+      .catch(function(error) {
+        console.error('Erreur lors de la récupération du compteur de vues :', error);
+      });
   }
 
   function incrementAndView(index) {
     viewCounts[index]++;
-    localStorage.setItem(`viewCount${index}`, viewCounts[index]);
+    
+    const viewsRef = firebase.database().ref(`/viewCount${index}`);
+    viewsRef.set(viewCounts[index]);
+
     document.getElementById(`viewCount${index}`).textContent = viewCounts[index];
   }
 
