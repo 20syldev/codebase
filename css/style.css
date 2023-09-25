@@ -46,6 +46,14 @@ hr {
     position: relative;
 }
 
+.blockHR {
+    user-select: none;
+    color: #5865F2;
+    margin-top: 10px;
+    margin-left: 25px;
+    position: relative;
+}
+
 a {
     color: #ffffff;
     text-decoration: underline;
@@ -88,36 +96,42 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 2.6em;
     font-weight: 600;
+    color: #ffffff;
 }
 
 .sub0 {
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
     font-weight: 600;
+    color: #ffffff;
 }
 
 .sub1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6em;
     font-weight: 600;
+    color: #ffffff;
 }
 
 .sub2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.35em;
     width: 55%;
+    color: #ffffff;
 }
 
 .sub3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     width: 55%;
+    color: #ffffff;
 }
 
 .sub4 {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.8em;
     width: 55%;
+    color: #ffffff;
 }
 
 .block br {
@@ -125,10 +139,12 @@ p {
 }
 
 .return {
+    user-select: none;
     margin-left: 25px;
 }
 
 .tag {
+    user-select: none;
     background-color: #016BF6;
     color: #ffffff;
     padding: 10px;
@@ -196,6 +212,7 @@ p {
 }
 
 #linkCode0 {
+    user-select: none;
     width: 130px;
     height: 40px;
     padding: 10px 25px;
