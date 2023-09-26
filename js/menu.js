@@ -30,6 +30,9 @@ function copyContent(button) {
   }
 }
 
+import firebase from 'firebase/app';
+import 'firebase/database';
+
 var firebaseConfig = {
   apiKey: "AIzaSyDcKlJWgVaIJWwfthqijUp34k14IdzJ5ZI",
   authDomain: "codebase-5f5f1.firebaseapp.com",
@@ -43,30 +46,27 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 document.addEventListener('DOMContentLoaded', () => {
-  const viewCounts = [];
-
-  for (let i = 0; i < 100; i++) {
-    const viewsRef = firebase.database().ref(`/viewCount${i}`);
-    viewsRef.once('value')
-      .then(function(snapshot) {
-        const storedCount = snapshot.val();
-        viewCounts[i] = storedCount ? parseInt(storedCount) : 0;
-        document.getElementById(`viewCount${i}`).textContent = viewCounts[i];
-      })
-      .catch(function(error) {
-        console.error('Erreur lors de la récupération du compteur de vues :', error);
-      });
-  }
-
+  // Fonction pour incrémenter le compteur de vues.
   function incrementAndView(index) {
-    viewCounts[index]++;
-    
     const viewsRef = firebase.database().ref(`/viewCount${index}`);
-    viewsRef.set(viewCounts[index]);
-
-    document.getElementById(`viewCount${index}`).textContent = viewCounts[index];
+    
+    // Incrémentation de la valeur dans la base de données.
+    viewsRef.transaction(function(currentValue) {
+      // La fonction de transaction reçoit la valeur actuelle et renvoie la nouvelle valeur.
+      return (currentValue || 0) + 1;
+    }, function(error, committed, snapshot) {
+      if (error) {
+        console.error('Transaction a échoué:', error);
+      } else if (!committed) {
+        console.log('Transaction annulée.');
+      } else {
+        // La transaction a réussi, mettez à jour l'affichage.
+        document.getElementById(`viewCount${index}`).textContent = snapshot.val();
+      }
+    });
   }
 
+  // Ajoutez des écouteurs d'événements à vos boutons.
   for (let i = 0; i < 100; i++) {
     const bouton = document.getElementById(`linkCode${i}`);
     bouton.addEventListener('click', () => {
