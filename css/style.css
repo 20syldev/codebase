@@ -101,9 +101,14 @@ p {
     color: #ffffff;
 }
 
+@font-face {
+    font-family: Ginto-Nord;
+    src: url('./Ginto-Nord-700.woff') format('woff');
+}
+
 .sub0 {
     margin-left: 25px;
-    font-family: 'Font Awesome 6 Brands', sans-serif;
+    font-family: 'Ginto-Nord', sans-serif;
     font-size: 2em;
     font-weight: 600;
     color: #ffffff;
