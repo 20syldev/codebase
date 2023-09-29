@@ -5,7 +5,7 @@
   <br>
   <h2>- CodeBase - Dépôt Officiel -</h2>
   <a href="https://20syldev.github.io/codebase">
-    <img src="https://img.shields.io/badge/Site :-v0.7.1-6479ee?labelColor=23272A" alt="Site">
+    <img src="https://img.shields.io/badge/Site :-v0.7.2-6479ee?labelColor=23272A" alt="Site">
   </a>
   <a href="https://discord.gg/jujvCJZ8hm">
     <img src="https://img.shields.io/discord/1056940597975449710?logo=discord&labelColor=23272A&label=Discord&color=5e60ce" alt="Discord">
