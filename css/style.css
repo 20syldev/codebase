@@ -95,20 +95,30 @@ p {
 
 .sub {
     margin-left: 5%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ginto-Nord-600', sans-serif;
     font-size: 2.6em;
     font-weight: 600;
     color: #ffffff;
 }
 
 @font-face {
-    font-family: Ginto-Nord;
+    font-family: Ginto-Nord-500;
+    src: url('./Ginto-Nord-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: Ginto-Nord-600;
+    src: url('./Ginto-Nord-600.woff') format('woff');
+}
+
+@font-face {
+    font-family: Ginto-Nord-700;
     src: url('./Ginto-Nord-700.woff') format('woff');
 }
 
 .sub0 {
     margin-left: 25px;
-    font-family: 'Ginto-Nord', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 2em;
     font-weight: 600;
     color: #ffffff;
@@ -229,7 +239,8 @@ br {
 .btns {
     margin-left: 25px;
     user-select: none;
-    width: 130px;
+    font-family: 'Ginto-Nord-500', sans-serif;
+    width: 140px;
     height: 40px;
     padding: 10px 25px;
     border: 2px solid;
